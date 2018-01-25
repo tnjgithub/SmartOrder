@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android='http://schemas.android.com/apk/res/android'
+    android:layout_width='420dp'
+    android:layout_height='wrap_content'
+    android:orientation='vertical'
+    android:background="@color/colorPrimary"
+    android:padding='25dp' >
+
+    <TextView
+        android:id="@+id/txt_ordernote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_900"
+        android:textSize="24dip"
+        android:text="Ürün adedi:"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/quantity_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width='match_parent'
+        android:layout_height='wrap_content'
+        android:gravity="bottom|right"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id='@+id/btn_addtoorderlist'
+            android:layout_width='wrap_content'
+            android:layout_height='wrap_content'
+            android:textColor="@color/white"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text='Listeye Ekle' />
+
+        <Button
+            android:id='@+id/btn_cancelselectedorder'
+            android:layout_width='wrap_content'
+            android:layout_height='wrap_content'
+            android:layout_marginLeft='10dp'
+            android:layout_toRightOf='@+id/btn_addtoorderlist'
+            android:text='Vazgeç' />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Order</string>
+    <string name="order_list">MyOrders</string>
+    <string name="my_orders">My Orders(DE)</string>
+    <string name="total_amount_with_currency">Total Amount : 0 EUR</string>
+    <string name="send_order">Send Order(DE)</string>
+</resources>

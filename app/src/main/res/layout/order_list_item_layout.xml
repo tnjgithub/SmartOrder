@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:layout_margin="3dp"
+    android:padding="2dip">
+    <!-- ListRow Left side Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="2dip">
+
+        <ImageView
+            android:id="@+id/order_item_image"
+            android:layout_width="144dip"
+            android:layout_height="144dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_meal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_order_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:paddingBottom="10dip"
+        android:text="Yemek-1"
+        android:textColor="#040404"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/txt_order_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_order_item_title"
+        android:layout_below="@+id/txt_order_item_title"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dip"
+        android:text="10 TL"
+        android:textColor="#343434"
+        android:textStyle="bold"
+        android:textSize="15dip" />
+
+
+</RelativeLayout>
